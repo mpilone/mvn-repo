@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.mpilone</groupId>
+  <artifactId>hazelcastmq</artifactId>
+  <versioning>
+    <versions>
+      <version>1.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20130208143635</lastUpdated>
+  </versioning>
+</metadata>
