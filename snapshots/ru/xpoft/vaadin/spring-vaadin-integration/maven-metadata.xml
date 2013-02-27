@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>ru.xpoft.vaadin</groupId>
+  <artifactId>spring-vaadin-integration</artifactId>
+  <versioning>
+    <release>1.6.6-abstractbeans-patch</release>
+    <versions>
+      <version>1.6.6-abstractbeans-patch</version>
+    </versions>
+    <lastUpdated>20130227142021</lastUpdated>
+  </versioning>
+</metadata>
