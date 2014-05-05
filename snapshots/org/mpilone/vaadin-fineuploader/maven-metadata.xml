@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.mpilone</groupId>
+  <artifactId>vaadin-fineuploader</artifactId>
+  <versioning>
+    <versions>
+      <version>1.4-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20140505134354</lastUpdated>
+  </versioning>
+</metadata>

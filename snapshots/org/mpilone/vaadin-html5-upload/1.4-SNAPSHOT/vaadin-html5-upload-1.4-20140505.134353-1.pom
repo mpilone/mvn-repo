@@ -1,0 +1,73 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>org.mpilone</groupId>
+  <artifactId>vaadin-html5-upload</artifactId>
+  <version>1.4-SNAPSHOT</version>
+  <packaging>pom</packaging>
+
+  <name>Vaadin HTML5 Upload</name>
+  <url>http://github.com/mpilone/vaadin-html5-upload</url>
+  <description>Vaadin wrapper for the [Fine Uploader](http://fineuploader.com) 
+    HTML5 upload component. The component implements an API
+    that is extremely similar to the standard Vaadin Upload component so it
+    should require relatively few changes to swap between the implementations.
+  </description>
+
+  <modules>
+    <module>vaadin-fineuploader</module>
+    <module>vaadin-plupload</module>
+    <module>vaadin-html5-upload-demo</module>
+    <module>vaadin-html5-upload-core</module>
+  </modules>
+
+  <build>
+    <plugins>
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    
+    <vaadin.version>7.1.14</vaadin.version>
+
+    <maven.compiler.source>1.7</maven.compiler.source>
+    <maven.compiler.target>1.7</maven.compiler.target>
+  </properties>
+ 
+  <distributionManagement>
+    <!-- Use 
+      -DaltDeploymentRepository=mpilone-snapshots::default::file:///Users/.../mvn-repo/snapshots 
+      when deploying locally.
+      
+      Refer to http://cemerick.com/2010/08/24/hosting-maven-repos-on-github/
+    -->
+    <repository>
+      <id>mpilone-releases</id>
+      <name>GitHub MVN Repository Releases</name>
+      <url>https://github.com/mpilone/mvn-repo/raw/master/releases</url>
+    </repository>
+    <snapshotRepository>
+      <id>mpilone-snapshots</id>
+      <name>GitHub MVN Repository Snapshots</name>
+      <url>https://github.com/mpilone/mvn-repo/raw/master/snapshots</url>
+    </snapshotRepository>
+  </distributionManagement>
+</project>

@@ -1,0 +1,72 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.mpilone</groupId>
+    <artifactId>vaadin-html5-upload</artifactId>
+    <version>1.4-SNAPSHOT</version>
+  </parent>
+
+  <artifactId>vaadin-html5-upload-core</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Vaadin HTML5 Upload Core</name>
+  <description>Vaadin wrapper for the [Fine Uploader](http://fineuploader.com) 
+    HTML5 upload component. The component implements an API
+    that is extremely similar to the standard Vaadin Upload component so it
+    should require relatively few changes to swap between the implementations.
+  </description>
+  
+  <build>
+    <plugins>
+     <!--
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-source-plugin</artifactId>
+        <version>2.2.1</version>
+        <executions>
+          <execution>
+            <id>attach-sources</id>
+            <phase>verify</phase>
+            <goals>
+              <goal>jar-no-fork</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+      -->
+    </plugins>
+  </build>
+  
+  <dependencies>
+    <!-- Compile -->
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-server</artifactId>
+      <version>${vaadin.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.6</version>
+    </dependency>
+    <dependency>
+      <groupId>commons-fileupload</groupId>
+      <artifactId>commons-fileupload</artifactId>
+      <version>1.3.1</version>
+    </dependency>
+
+    <!-- Runtime -->
+
+    <!-- Provided -->
+    <dependency>
+      <groupId>org.eclipse.jetty.orbit</groupId>
+      <artifactId>javax.servlet</artifactId>
+      <version>3.0.0.v201112011016</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+</project>
