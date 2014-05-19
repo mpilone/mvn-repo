@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.mpilone</groupId>
+  <artifactId>vaadin-plupload</artifactId>
+  <version>1.3.1-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20140519.161549</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20140519161549</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>jar</extension>
+        <value>1.3.1-20140519.161549-1</value>
+        <updated>20140519161549</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.3.1-20140519.161549-1</value>
+        <updated>20140519161549</updated>
+      </snapshotVersion>
+      <snapshotVersion>
+        <classifier>sources</classifier>
+        <extension>jar</extension>
+        <value>1.3.1-20140519.161549-1</value>
+        <updated>20140519161549</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.mpilone</groupId>
+  <artifactId>html5-upload-vaadin-parent</artifactId>
+  <version>1.4-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20140519.161420</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20140519161420</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.4-20140519.161420-1</value>
+        <updated>20140519161420</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
