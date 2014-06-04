@@ -1,0 +1,77 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+<parent>
+  <artifactId>html5-upload-vaadin-parent</artifactId>
+  <groupId>org.mpilone</groupId>
+  <version>1.4.0</version>
+</parent>
+
+  <artifactId>html5-upload-vaadin-assembly</artifactId>
+  <packaging>pom</packaging>
+
+  <name>HTML5 Upload for Vaadin Assembly</name>
+  <url>http://github.com/mpilone/vaadin-html5-upload</url>
+  <description>Assembles the HTML5 upload for Vaadin components as 
+    distributable add-ons.</description>
+
+ <dependencies>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>plupload-vaadin</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+    <dependency>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>fineuploader-vaadin</artifactId>
+      <version>${project.version}</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+
+  <build>
+    <plugins>
+     <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-assembly-plugin</artifactId>
+        <version>2.4</version>
+        <executions>
+          <execution>
+            <id>plupload-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <appendAssemblyId>false</appendAssemblyId>
+              <descriptors>
+                <descriptor>src/main/assembly/plupload.xml</descriptor>
+              </descriptors>
+              <finalName>plupload-vaadin-${project.version}</finalName>
+            </configuration>
+          </execution>
+          <execution>
+            <id>fineuploader-assembly</id>
+            <phase>package</phase>
+            <goals>
+              <goal>single</goal>
+            </goals>
+            <configuration>
+              <appendAssemblyId>false</appendAssemblyId>
+              <descriptors>
+                <descriptor>src/main/assembly/fineuploader.xml</descriptor>
+              </descriptors>
+              <finalName>fineuploader-vaadin-${project.version}</finalName>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+    </plugins>
+  </build>
+  
+ 
+</project>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata modelVersion="1.1.0">
+  <groupId>org.mpilone.hazelcastmq</groupId>
+  <artifactId>hazelcastmq-parent</artifactId>
+  <version>1.0-SNAPSHOT</version>
+  <versioning>
+    <snapshot>
+      <timestamp>20140604.124854</timestamp>
+      <buildNumber>1</buildNumber>
+    </snapshot>
+    <lastUpdated>20140604124854</lastUpdated>
+    <snapshotVersions>
+      <snapshotVersion>
+        <extension>pom</extension>
+        <value>1.0-20140604.124854-1</value>
+        <updated>20140604124854</updated>
+      </snapshotVersion>
+    </snapshotVersions>
+  </versioning>
+</metadata>
