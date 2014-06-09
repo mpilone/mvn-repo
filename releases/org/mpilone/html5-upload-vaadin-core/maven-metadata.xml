@@ -3,10 +3,11 @@
   <groupId>org.mpilone</groupId>
   <artifactId>html5-upload-vaadin-core</artifactId>
   <versioning>
-    <release>1.4.0</release>
+    <release>1.4.1</release>
     <versions>
       <version>1.4.0</version>
+      <version>1.4.1</version>
     </versions>
-    <lastUpdated>20140604124749</lastUpdated>
+    <lastUpdated>20140609133929</lastUpdated>
   </versioning>
 </metadata>

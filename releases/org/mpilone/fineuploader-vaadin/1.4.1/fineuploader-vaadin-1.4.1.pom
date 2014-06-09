@@ -1,0 +1,53 @@
+<project
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <parent>
+    <groupId>org.mpilone</groupId>
+    <artifactId>html5-upload-vaadin-parent</artifactId>
+    <version>1.4.1</version>
+  </parent>
+
+  <artifactId>fineuploader-vaadin</artifactId>
+  <packaging>jar</packaging>
+
+  <name>Fine Uploader for Vaadin</name>
+  <url>http://github.com/mpilone/vaadin-fineuploader</url>
+  <description>Vaadin wrapper for the [Fine Uploader](http://fineuploader.com) 
+    HTML5 upload component. The component implements an API
+    that is extremely similar to the standard Vaadin Upload component so it
+    should require relatively few changes to swap between the implementations.
+  </description>
+  
+  <dependencies>
+    <!-- Compile -->
+    <dependency>
+      <groupId>com.vaadin</groupId>
+      <artifactId>vaadin-server</artifactId>
+      <version>${vaadin.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+      <version>1.7.6</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mpilone</groupId>
+      <artifactId>html5-upload-vaadin-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+
+    <!-- Runtime -->
+
+    <!-- Provided -->
+    <dependency>
+      <groupId>org.eclipse.jetty.orbit</groupId>
+      <artifactId>javax.servlet</artifactId>
+      <version>3.0.0.v201112011016</version>
+      <scope>provided</scope>
+    </dependency>
+  </dependencies>
+  
+</project>
