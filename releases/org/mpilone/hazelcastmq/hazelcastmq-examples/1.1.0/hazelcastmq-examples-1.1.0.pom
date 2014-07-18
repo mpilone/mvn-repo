@@ -1,0 +1,67 @@
+<?xml version="1.0"?>
+<project
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+  xmlns="http://maven.apache.org/POM/4.0.0"
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+  <modelVersion>4.0.0</modelVersion>
+  <parent>
+    <artifactId>hazelcastmq-parent</artifactId>
+    <groupId>org.mpilone.hazelcastmq</groupId>
+    <version>1.1.0</version>
+  </parent>
+
+  <artifactId>hazelcastmq-examples</artifactId>
+
+  <name>HazelcastMQ Examples</name>
+
+  <properties>
+    <spring.version>3.2.0.RELEASE</spring.version>
+  </properties>
+
+  <dependencies>
+    <dependency>
+      <groupId>org.mpilone.hazelcastmq</groupId>
+      <artifactId>hazelcastmq-core</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mpilone.hazelcastmq</groupId>
+      <artifactId>hazelcastmq-jms</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mpilone.hazelcastmq</groupId>
+      <artifactId>hazelcastmq-stomp</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mpilone.hazelcastmq</groupId>
+      <artifactId>hazelcastmq-camel</artifactId>
+      <version>${project.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.hazelcast</groupId>
+      <artifactId>hazelcast-client</artifactId>
+      <version>${hazelcast.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jms</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+     <dependency>
+      <groupId>org.apache.geronimo.specs</groupId>
+      <artifactId>geronimo-jms_1.1_spec</artifactId>
+      <scope>compile</scope>
+    </dependency>
+
+    <!-- Runtime -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-simple</artifactId>
+      <version>${slf4j.version}</version>
+      <scope>runtime</scope>
+    </dependency>
+
+  </dependencies>
+</project>
