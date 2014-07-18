@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata>
+  <groupId>org.mpilone</groupId>
+  <artifactId>timeline-vaadin-parent</artifactId>
+  <versioning>
+    <versions>
+      <version>1.2.0-SNAPSHOT</version>
+    </versions>
+    <lastUpdated>20140718145456</lastUpdated>
+  </versioning>
+</metadata>
